@@ -5,7 +5,7 @@ require "rev_b2bin_payment/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "rev_b2bin_payment"
-  spec.version       = RevB2binPayment::VERSION
+  spec.version       = RevB2binPayment.version
   spec.authors       = ["Cuongpm"]
   spec.email         = ["harry88pham@gmail.com"]
 
