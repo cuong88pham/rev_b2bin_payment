@@ -8,8 +8,8 @@ module RevB2binPayment
 	  	:limited_withdraw_without_kyc, :uri_api, :gateway_url, :callback_url, :callback_withdraw_url, :table_currency
 	  
 	  def initialize(params = {}, current_user, wallet, key, secret, limited_withdraw_with_kyc, 
-	  	limited_withdraw_without_kyc, uri_api, gateway_url, callback_url=nil, callback_withdraw_url=nil, 
-	  	table_currency = nil)
+	  	limited_withdraw_without_kyc, uri_api, gateway_url, callback_url, callback_withdraw_url, 
+	  	table_currency)
 	    @params = params
 	    @current_user = current_user
 	    @limited_withdraw_without_kyc = limited_withdraw_without_kyc

@@ -1,11 +1,12 @@
 class Wallet::B2binPaymentDepositController < BaseController
-  before_action :check_b2binpay, only: [:create]
-  before_action :new_payment, only: [:new]
-  before_action :get_currency, only: [:new, :create]
-  before_action :set_b2binpay, only: [:show]
-  before_action :get_pending_payment, only: [:new]
+  # before_action :check_b2binpay, only: [:create]
+  # before_action :new_payment, only: [:new]
+  # before_action :get_currency, only: [:new, :create]
+  # before_action :set_b2binpay, only: [:show]
+  # before_action :get_pending_payment, only: [:new]
   def index
-    @payments = current_user.b2bin_payments
+    render json: {status: 'ok'}
+    # @payments = current_user.b2bin_payments
   end
 
   def new
