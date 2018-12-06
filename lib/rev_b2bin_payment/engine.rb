@@ -1,7 +1,7 @@
 module RevB2binPayment
   class Engine < Rails::Engine
     engine_name 'rev_b2bin_payment'
-
+    isolate_namespace RevB2binPayment
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
